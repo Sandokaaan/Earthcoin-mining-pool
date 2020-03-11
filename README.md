@@ -8,35 +8,35 @@ A guide for Debian/Ubuntu linux server:
 
 2. Install dependency libraries.
 <code>
-  sudo apt-get update
-  sudo apt-get install git redis nano wget curl ntp build-essential libtool autotools-dev autoconf pkg-config
-  sudo apt-get install libssl-dev libboost-all-dev npm nodejs libminiupnpc-dev software-properties-common
-  wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
-  source ~/.bashrc
-  nvm install v8.1.4  
+  sudo apt-get update<br>
+  sudo apt-get install git redis nano wget curl ntp build-essential libtool autotools-dev autoconf pkg-config<br>
+  sudo apt-get install libssl-dev libboost-all-dev npm nodejs libminiupnpc-dev software-properties-common<br>
+  wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash<br>
+  source ~/.bashrc<br>
+  nvm install v8.1.4<br>  
 </code><br>
 
 3. Install pool software.
 <code>
-  git clone https://github.com/Sandokaaan/eacpool.git
-  cd eacpool
-  nvm use v8.1.4
-  npm install
-  npm update
-  npm audit fix
+  git clone https://github.com/Sandokaaan/eacpool.git<br>
+  cd eacpool<br>
+  nvm use v8.1.4<br>
+  npm install<br>
+  npm update<br>
+  npm audit fix<br>
 </code><br>
 
 4. Configure yoyr pool settings.
 Edit file "config.json". Especially in the section "website" set a port number for the web interface of the pool and domain name or IP address:
 <code>
-      "website": {
-        "enabled": true,
-        "host": "0.0.0.0",
-        "port": <b>9080</b>,
-        "stratumHost": "MY_SERVER_IP_OR_DOMAIN_NAME",
-        "stats": {
-            "updateInterval": 15,
-            "historicalRetention": 43200,
-            "hashrateWindow": 300
-        },
+      "website": {<br>
+        "enabled": true,<br>
+        "host": "0.0.0.0",<br>
+        "port": <b>9080</b>,<br>
+        "stratumHost": <b>"MY_SERVER_IP_OR_DOMAIN_NAME"</b>,<br>
+        "stats": {<br>
+            "updateInterval": 15,<br>
+            "historicalRetention": 43200,<br>
+            "hashrateWindow": 300<br>
+        },<br>
 </code><br>  
