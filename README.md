@@ -3,10 +3,22 @@ This project is a fork of BootNOMP https://github.com/SkinnyPeteTheGiraffe/BootN
 Patched for daemons core 0.17+
 
 ## Instalation.
-A guide for Debian/Ubuntu linux server.
-1. Run a full node of coin daemon and let it sync.
+A guide for Debian/Ubuntu linux server:
+1. Run a full node of coin daemon and let it sync.  Use either a pre-compiled binaries (https://github.com/Sandokaaan/EarthCoin2019/releases/download/v.2.0.4/earthcoin_linux_64bit.zip) or build your own from the source code (https://github.com/Sandokaaan/EarthCoin2019).
 
-<code>sudo apt-get update</code>
+2. Install dependency libraries.
+<code>
+  sudo apt-get update
+  sudo apt-get install git redis nano wget curl ntp build-essential libtool autotools-dev autoconf pkg-config
+  sudo apt-get install libssl-dev libboost-all-dev npm nodejs libminiupnpc-dev software-properties-common
+  wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+  source ~/.bashrc
+  nvm install v8.1.4
+  nvm use v8.1.4
+</code>
+
+3. Install pool software.
+
 
 -------
 ## Updates
