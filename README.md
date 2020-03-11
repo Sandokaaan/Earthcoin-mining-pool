@@ -33,11 +33,6 @@ Edit file "config.json". Especially in the section "website" set a port number f
       "website": {
         "enabled": true,
         "host": "0.0.0.0",
-        "port": <b>9080</b>,
-        "stratumHost": <b>"MY_SERVER_IP_OR_DOMAIN_NAME"</b>,
-        "stats": {
-            "updateInterval": 15,
-            "historicalRetention": 43200,
-            "hashrateWindow": 300
-        },
+        "port": 9080,
+        "stratumHost": "MY_SERVER_IP_OR_DOMAIN_NAME",
 ```
