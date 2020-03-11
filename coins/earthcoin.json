@@ -1,0 +1,9 @@
+{
+    "name": "Earthcoin",
+    "symbol": "EAC",
+    "algorithm": "scrypt",
+    "explorerGetBlockJSON": "http://bck.deveac.com:3000/getblock/",
+    "explorerGetBlock": "http://bck.deveac.com:3000/explorer/",
+    "explorerGetTX": "http://bck.deveac.com:3000/transaction/",
+    "blockTime": 60
+}
