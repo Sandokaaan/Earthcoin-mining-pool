@@ -1,10 +1,12 @@
-## Attention! 
-This project will soon be replaced by my upcoming project Open Source Mining Portal (OSMP); which will take the great features NOMP offers, while expanding upon them and giving everything a better look! I have no current ETA, though once I have a proof of work, I will release the repository under MIT! Stay tuned if you would like to help out development by contributing!
+## About 
+This project is a fork of BootNOMP https://github.com/SkinnyPeteTheGiraffe/BootNOMP
+Patched for daemons core 0.17+
 
-## Helping give NOMP new life! With some style.
-#### If you want to help contribute, please look at the original [project](https://github.com/foxer666/node-open-mining-portal) first!
+## Instalation.
+A guide for Debian/Ubuntu linux server.
+1. Run a full node of coin daemon and let it sync.
 
-BootNOMP is all the things great about NOMP, now with modern style and design of BootStrap 4! Having disliked the previous UI, due to cramping, little to no info displayed while what is displayed is not very helpful to users. I decided to fork a already great project, and add some stylistic touches it severely needs. I would of considered requesting pulls to the main branch, though with such heavy changes to the project, I decided a hard fork would be well suited. But if you would like to contribute, please consider looking at the [original project](https://github.com/foxer666/node-open-mining-portal) first, as these guys are the ones who helped get this NOMP rebirthing process started.
+<code>sudo apt-get update</code>
 
 -------
 ## Updates
