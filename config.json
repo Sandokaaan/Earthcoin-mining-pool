@@ -1,6 +1,6 @@
 {
     
-    "poolname": "My Cool Pool",
+    "poolname": "My Earthcoin Pool",
     
     "poollogo": "",
     
@@ -18,7 +18,7 @@
 
     "logger" : {
         "level" : "debug",
-        "file" : "/home/MYUSER/logs/nomp_debug.log"
+        "file" : "~/logs/nomp_debug.log"
     },
 
     "cliHost": "127.0.0.1",
@@ -52,7 +52,7 @@
     "website": {
         "enabled": true,
         "host": "0.0.0.0",
-        "port": 80,
+        "port": 9080,
         "stratumHost": "MY_SERVER_IP_OR_DOMAIN_NAME",
         "stats": {
             "updateInterval": 15,
