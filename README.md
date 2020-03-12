@@ -79,8 +79,15 @@ In my sample file are set two port - 9001 for variable difficulty 65536-500000 a
 ## Usage.
 Run your pool by a sequence of commands:
 ```bash
+  screen
   cd ~/eacpool
   nvm use v8.1.4
   node init.js
 ```
 Take a moment to glance at the running logs. If no error message appears, you can disconnect by pressing <code>CTRD + A, D</code>.
+Then open in your webbrowser homepage of your pool 
+<code>MY_SERVER_IP_OR_DOMAIN_NAME:PORT</code>
+(for example http://203.75.31.14:8090/ or http://eac.miner.mydomain.com:8090/)
+and get acquainted with the web interface of your pool.
+
+Miners in your pool should use a valid earthcoin address as username and any/empty password. Miner rewards are payd to the address used as the username.
