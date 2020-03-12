@@ -39,7 +39,7 @@ Edit file "config.json". Especially in the section "website" set a port number f
         "port": 9080,
         "stratumHost": "MY_SERVER_IP_OR_DOMAIN_NAME",
 ```
-Feel free to understand and set any property to custom your pool.<br>
+Feel free to understand and set any property to customize your pool.<br>
 Then edit "pool_configs/earthcoin.json" file and set YOUR_POOL_ADDRESS and YOUR_FEE_ADDRESS lines:
 ```json
     "address": "YOUR_POOL_ADDRESS",
