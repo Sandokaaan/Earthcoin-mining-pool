@@ -15,6 +15,9 @@ A guide for Debian/Ubuntu linux server:
   wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
   source ~/.bashrc
   nvm install v8.1.4
+  nvm use v8.1.4
+  npm update -g
+  npm install -g npm@latest
 ```
 
 3. Install pool software.
