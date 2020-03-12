@@ -51,6 +51,7 @@
         "redis": "^2.7.1",
         "request": "^2.83.0",
         "sma": "^0.1.0",
+        "multi-hashing": "git://github.com/Sandokaaan/node-multi-hashing.git",
         "stratum-pool": "git://github.com/EasyX-Community/node-stratum-pool.git",
         "winston": "3.0.0-rc2",
         "winston-daily-rotate-file": "^3.0.0"
