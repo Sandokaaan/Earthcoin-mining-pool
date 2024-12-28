@@ -39,7 +39,6 @@
         "asn1": "^0.2.4",
         "async": "^2.6.1",
         "bcrypt-pbkdf": "^1.0.2",
-        "bignum": "^0.13.0",
         "bignumber.js": "^6.0.0",
         "body-parser": "^1.18.3",
         "chart.js": "^2.7.3",
@@ -60,7 +59,6 @@
         "ls": "^0.2.1",
         "mime-types": "^2.1.21",
         "moment": "^2.23.0",
-        "node-multi-hashing": "https://github.com/Sandokaaan/node-multi-hashing.git",
         "mysql": "^2.16.0",
         "newrelic": "^5.1.0",
         "node-json-minify": "^1.0.0",
@@ -73,7 +71,6 @@
         "semver": "^5.7.1",
         "sma": "^0.1.1",
         "sshpk": "^1.15.2",
-        "stratum-pool": "https://github.com/Sandokaaan/node-stratum-pool.git",
         "winston": "^3.1.0",
         "winston-daily-rotate-file": "^3.5.1",
         "winston-transport": "^4.3.0"
