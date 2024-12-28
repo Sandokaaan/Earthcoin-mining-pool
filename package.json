@@ -64,7 +64,7 @@
         "node-json-minify": "^1.0.0",
         "node-watch": "^0.5.9",
         "nonce": "^1.0.4",
-        "redis": "^2.7.1",
+        "redis": "^3.1.0",
         "redis-commands": "^1.4.0",
         "request": "^2.88.0",
         "safe-buffer": "^5.1.2",
