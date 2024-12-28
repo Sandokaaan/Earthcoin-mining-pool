@@ -1,4 +1,4 @@
-{
+{             // this file is not required for aux-pow mining, feel free to delete it
     "enabled": false,
     "coin": "earthcoin.json",
 
