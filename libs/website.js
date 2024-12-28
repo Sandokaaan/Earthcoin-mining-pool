@@ -159,7 +159,7 @@ module.exports = function () {
                             if (pName.toLowerCase() === c)
                                 return {
                                     daemon: poolConfigs[pName].paymentProcessing.daemon,
-                                    address: poolConfigs[pName].address
+                                    address: poolConfigs[pName].addresses[0]
                                 }
                         }
                     })();
