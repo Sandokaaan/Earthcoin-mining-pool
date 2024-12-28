@@ -1,5 +1,5 @@
 {
-    "enabled": true,
+    "enabled": false,
     "coin": "earthcoin.json",
 
     "address": "YOUR_POOL_ADDRESS",
