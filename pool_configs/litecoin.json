@@ -1,0 +1,113 @@
+{
+    "enabled": true,
+    "coin": "litecoin.json",
+
+   "auxes": [ // Defines auxillery coins
+        {
+            "coin": "dogecoin.json",
+            "daemons": [ // It is reccomended to supply multiple daemons here for redundancy
+                {
+                    "host": "127.0.0.1",
+                    "port": 22555, // or change to your dogecoin RPC port number
+                    "user": "REPLACE WITH YOUR DOGECOIN RPC USERNAME", // see dogecoin.conf file
+                    "password": "REPLACE WITH YOUR DOGECOIN RPC PASSWORD" // see dogecoin.conf file
+                }
+            ]
+        },
+        {
+            "coin": "earthcoin.json",
+            "daemons": [ // It is reccomended to supply multiple daemons here for redundancy
+                {
+                    "host": "127.0.0.1",
+                    "port": 15678, // or change to your earthcoin RPC port number
+                    "user": "REPLACE WITH YOUR EARTHCOIN RPC USERNAME", // see earthcoin.conf file
+                    "password": "REPLACE WITH YOUR EARTHCOIN RPC PASSWORD" // see earthcoin.conf file
+                }
+            ]
+        }
+    // Feel free to add more scrypt-based AUX-POW coins 
+    // e.g. Bells, Craftcoin, Dingocoin, Junkcoin, Luckycoin, Myriadcoin_scrypt, Newyorkcoin,
+    // Pepecoin, Worldcoin, Viacoin etc.
+    ],
+  
+    "addresses": [
+        "REPLACE_THIS_WITH_POOL_LITECOIN_WALLET_ADDRESS"
+    ],
+  
+    "donateaddress": "REPLACE_THIS_WITH_YOUR_DONATE_ADDRESS",
+
+    "rewardRecipients": {
+        "REPLACE_THIS_WITH_FEE_WALLET_ADDRESS1": 0.00,
+        "REPLACE_THIS_WITH_FEE_WALLET_ADDRESS2": 0.00
+    },
+
+    "reward": "POW",
+
+    "paymentProcessing": {
+        "enabled": false,    // change to true, if you want to automaticly your miners; only LTC will be paid, AUX-coins do not
+        "paymentInterval": 600,
+        "minimumPayment": 0.01,
+        "daemon": {
+            "host": "127.0.0.1",
+            "port": 19332,    // or change to your litecoin RPC port number
+            "user": "REPLACE WITH YOUR LITECOIN RPC USERNAME", // see litecoin.conf file
+            "password": "REPLACE WITH YOUR LITECOIN RPC PASSWORD" // see litecoin.conf file
+        }
+    },
+
+    "ports": {   // feel free to modify as you need
+        "3008": {
+            "diff": 131072    // typically single L3-miner
+        },
+        "3009": {
+            "diff": 1048576   // typically single L7-miner
+        },      
+        "3010": {             // fit difficulty to the miner, e.g. a rig farm with or rented rig
+            "diff": 1048576,
+            "varDiff": {
+                "minDiff": 131072,
+                "maxDiff": 8388608,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            }
+        }
+    },
+
+    "daemons": [
+        {
+            "host": "127.0.0.1",
+            "port": 19332,    // or change to your litecoin RPC port number
+            "user": "REPLACE WITH YOUR LITECOIN RPC USERNAME", // see litecoin.conf file
+            "password": "REPLACE WITH YOUR LITECOIN RPC PASSWORD" // see litecoin.conf file
+        }
+    ],
+
+    "p2p": {
+        "enabled": false,      // if you need enable this, you should modify coins/litecoin.json file to provide peerMagic
+        "host": "127.0.0.1",
+        "port": 19333,
+        "disableTransactions": true
+    },
+
+    "mposMode": {
+        "enabled": false,
+        "host": "127.0.0.1",
+        "port": 3306,
+        "user": "me",
+        "password": "mypass",
+        "database": "ltc",
+        "checkPassword": true,
+        "autoCreateWorker": false
+    },
+
+    "mongoMode": {
+        "enabled": false,
+        "host": "127.0.0.1",
+        "user": "",
+        "pass": "",
+        "database": "ltc",
+        "authMechanism": "DEFAULT"
+    }
+
+}
