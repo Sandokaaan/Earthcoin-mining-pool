@@ -16,15 +16,15 @@ A guide for Debian/Ubuntu linux server:
   source ~/.bashrc
   nvm install v8.1.4
   nvm use v8.1.4
+  nvm alias default v8.1.4
   npm update -g
-  npm install -g npm@latest
 ```
 
 3. Install pool software.
 ```bash
   git clone https://github.com/Sandokaaan/eacpool.git
   cd eacpool
-  nvm use v8.1.4
+  npm install glob@7.1.6  
   npm install
   npm update
   npm audit fix
